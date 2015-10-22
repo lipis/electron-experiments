@@ -1,7 +1,14 @@
 electron_packager = require 'electron-packager'
 
 module.exports = (grunt) ->
+  require('load-grunt-tasks') grunt, pattern: ['grunt-*']
   grunt.initConfig
+    pkg: grunt.file.readJSON 'electron/package.json'
+
+    clean:
+      build: 'build'
+      dist: 'dist'
+
     electron:
       options:
         name: 'Electron Experiments'
@@ -20,6 +27,16 @@ module.exports = (grunt) ->
           platform: 'win32'
           arch: 'ia32'
 
+    'create-windows-installer':
+      internal:
+        title: '<%= pkg.productName %>'
+        version: '<%= pkg.version %>'
+        author: 'Panayiotis Lipiridis'
+        description: 'Some exeperiments with Electron'
+        appDirectory: 'build/<%= pkg.productName %>-win32-ia32'
+        outputDirectory: 'dist/<%= pkg.productName %>-win32-ia32'
+        exe: '<%= pkg.productName %>.exe'
+
   grunt.registerMultiTask 'electron', 'Package Electron apps', ->
     done = this.async()
     electron_packager @options(), (error) ->
@@ -27,3 +44,5 @@ module.exports = (grunt) ->
         grunt.warn error
       else
         done()
+
+  grunt.registerTask 'build-win',  ['clean:dist', 'electron:win', 'create-windows-installer']

@@ -2,20 +2,9 @@
 .DS_Store
 .grunt
 .Icon
-/_SpecRunner.html
 /electron/dist
-/nbproject
 node_modules
 /temp
-/Web.config
-/wrap
 /cache
 /build
-
-aws-keys.json
-Gruntfile.js
-
-# IntelliJ
-# http://devnet.jetbrains.com/docs/DOC-1186
-/.idea/**/*.xml
-!/.idea/codeStyleSettings.xml
+/dist
