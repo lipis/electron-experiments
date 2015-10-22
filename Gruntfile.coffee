@@ -45,4 +45,5 @@ module.exports = (grunt) ->
       else
         done()
 
-  grunt.registerTask 'build-win',  ['clean:dist', 'electron:win', 'create-windows-installer']
+  grunt.registerTask 'build-win',  ['clean:build', 'electron:win']
+  grunt.registerTask 'dist-win',   ['clean:dist', 'build-win', 'create-windows-installer']
