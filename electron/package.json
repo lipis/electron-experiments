@@ -1,6 +1,6 @@
 {
   "name": "electron-experiments",
-  "productName": "Electron Experiments",
+  "productName": "ElectronExperiments",
   "version": "0.1.0",
   "main": "main.js",
   "dependencies": {

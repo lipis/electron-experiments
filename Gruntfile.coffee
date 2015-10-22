@@ -11,7 +11,7 @@ module.exports = (grunt) ->
 
     electron:
       options:
-        name: 'Electron Experiments'
+        name: '<%= pkg.productName %>'
         dir: 'electron'
         out: 'build'
         version: '0.34.0'

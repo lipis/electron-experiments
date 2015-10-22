@@ -4,6 +4,8 @@ const app = require('app');
 const BrowserWindow = require('browser-window');
 const ipc = require('ipc');
 const notifier = require('node-notifier');
+const squirrel = require('./squirrel');
+
 
 var main;
 
@@ -36,3 +38,5 @@ app.on('ready', function() {
   });
   main.loadUrl('file://' + __dirname + '/index.html');
 });
+
+squirrel.handleSquirrelEvent();
