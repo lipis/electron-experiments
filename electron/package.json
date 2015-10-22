@@ -4,6 +4,6 @@
   "version": "0.1.0",
   "main": "main.js",
   "dependencies": {
-    "node-notifier": "4.3.1"
+    "node-notifier": "https://github.com/mikaelbr/node-notifier.git#master"
   }
 }
