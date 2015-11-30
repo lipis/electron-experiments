@@ -14,7 +14,7 @@ module.exports = (grunt) ->
         name: '<%= pkg.productName %>'
         dir: 'electron'
         out: 'build'
-        version: '0.34.0'
+        version: '0.35.2'
         arch: 'all'
         asar: true
         overwrite: true
