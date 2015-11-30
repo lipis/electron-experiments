@@ -2,7 +2,7 @@
 
 const app = require('app');
 const BrowserWindow = require('browser-window');
-const ipc = require('ipc');
+const ipc = require('electron').ipcMain;
 const notifier = require('node-notifier');
 const squirrel = require('./squirrel');
 
@@ -36,7 +36,7 @@ app.on('ready', function() {
     'min-size': 320,
     'min-height': 320
   });
-  main.loadUrl('file://' + __dirname + '/index.html');
+  main.loadURL('file://' + __dirname + '/index.html');
 });
 
 squirrel.handleSquirrelEvent();

@@ -1,6 +1,6 @@
 'use strict';
 
-let ipc = require('ipc');
+let ipc = require('electron').ipcRenderer;
 
 var button = document.getElementById('notify');
 
