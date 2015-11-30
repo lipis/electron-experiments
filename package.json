@@ -2,6 +2,7 @@
   "name": "electron-experiments",
   "version": "1.0.0",
   "main": "./electron/main.js",
+  "license": "MIT",
   "scripts": {
     "start": "electron electron --debug=5858"
   },
@@ -14,4 +15,3 @@
     "load-grunt-tasks": "3.3.0"
   }
 }
-

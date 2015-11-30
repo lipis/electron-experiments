@@ -3,6 +3,7 @@
   "productName": "ElectronExperiments",
   "version": "0.1.0",
   "main": "main.js",
+  "license": "MIT",
   "dependencies": {
     "node-notifier": "https://github.com/mikaelbr/node-notifier.git#master"
   }
