@@ -5,8 +5,6 @@
 ```shell
 $ cd /path/to/electron-experiments
 $ npm install
-$ cd electron
-$ npm install
 ```
 
 ## Run
