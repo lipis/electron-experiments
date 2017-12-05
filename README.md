@@ -1,5 +1,7 @@
 # electron-experiments
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/lipis/electron-experiments.svg)](https://greenkeeper.io/)
+
 ## Install
 
 ```shell
